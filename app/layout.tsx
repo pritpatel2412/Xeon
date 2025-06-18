@@ -7,6 +7,7 @@ import { Outfit } from "next/font/google"
 
 import { Toaster } from "@/components/ui/toaster"
 import { cn } from "@/lib/utils"
+import { Analytics } from "@vercel/analytics/next"
 
 const outfit = Outfit({ subsets: ["latin"] })
 
@@ -32,10 +33,35 @@ const outfit = Outfit({ subsets: ["latin"] })
 // })
 
 export const metadata: Metadata = {
-  title: "Xeon Directory",
-  description: "Pitch, Vote and Grow",
+  title: "Xeon – More Than Just Pitches",
+  description:
+    "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
   icons: {
     icon: "/favicon.ico", // path relative to public
+  },
+  openGraph: {
+    title: "Xeon – More Than Just Pitches",
+    description:
+      "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
+    url: "https://thexeon.vercel.app",
+    siteName: "Xeon",
+    images: [
+      {
+        url: "https://i.postimg.cc/SR8NBpVK/Screenshot-2025-06-18-093344.png", // Make sure this image exists in public/
+        width: 1200,
+        height: 630,
+        alt: "Xeon – Pitch, Connect, Launch",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Xeon – More Than Just Pitches",
+    description:
+      "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
+    images: ["https://i.postimg.cc/SR8NBpVK/Screenshot-2025-06-18-093344.png"],
   },
 }
 

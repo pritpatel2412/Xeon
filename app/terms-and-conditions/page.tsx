@@ -59,7 +59,7 @@ export default function TermsAndConditions() {
       <div className="mt-10 text-center">
         <a
           href="/"
-          className="inline-block rounded-md bg-black px-6 py-2 text-white hover:bg-neutral-800 transition"
+          className="inline-block rounded-md bg-pink-600 px-6 py-2 text-white hover:bg-pink-700 transition"
         >
           ← Back to Dashboard
         </a>

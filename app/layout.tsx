@@ -32,8 +32,8 @@ const outfit = Outfit({ subsets: ["latin"] })
 // })
 
 export const metadata: Metadata = {
-  title: "Xeon Directory",
-  description: "Pitch, Vote and Grow",
+  title: "Xeon – More Than Just Pitches",
+  description: "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
   icons: {
     icon: "/favicon.ico", // path relative to public
   },

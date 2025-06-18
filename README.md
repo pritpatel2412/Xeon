@@ -1,5 +1,3 @@
-# Xeon - Startup Directory Platform
-
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
@@ -7,7 +5,7 @@
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
 </p>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pritpatel2412/Xeon)
+<h1 align="center">Xeon - Startup Directory Platform</h1>
 
 **Xeon** is a platform where entrepreneurs can:
 
@@ -54,7 +52,7 @@ npm run dev
 npm run build
 ```
 
-## 🔤 Live
+## 🌤 Live
 
 🔗 [thexeon.vercel.app](https://thexeon.vercel.app/)
 

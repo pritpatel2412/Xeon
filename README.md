@@ -2,37 +2,75 @@
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Sanity-FF3C2E?style=for-the-badge&logo=sanity&logoColor=white" />
 </p>
 
-<h1 align="center">Xeon - Startup Directory Platform</h1>
+<h1 align="center">Next ventures - Startup Directory Platform</h1>
 
-**Xeon** is a platform where entrepreneurs can:
+<p align="center">A platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other pitches, and gain exposure through a clean minimalistic design for a smooth user experience.</p>
 
-* Submit their startup ideas for virtual pitch competitions
-* Browse other pitches for inspiration
-* Gain exposure through a clean, minimalistic interface
+## 📋 Table of Contents
 
-## 🌟 Features
+* 🤖 [Introduction](#-introduction)
+* ⚙️ [Tech Stack](#️-tech-stack)
+* 🔋 [Features](#-features)
+* 🤸 [Quick Start](#-quick-start)
+* 🚨 [About](#-about)
 
-* 📥 Submit your startup with logo, name, and description
-* 📖 Browse and filter startups by category
-* 💬 Participate in virtual pitch contests
-* 🔍 Clean and responsive UI
-* 🔐 GitHub OAuth Authentication
+## 🤖 Introduction
 
-## 🚀 Tech Stack
+A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other pitches, and gain exposure through a clean minimalistic design for a smooth user experience.
 
-* **Next.js**
-* **TypeScript**
-* **Tailwind CSS**
-* **Shadcn/ui**
-* **MongoDB (via Mongoose)**
-* **NextAuth (GitHub OAuth)**
-* **Vercel for Hosting**
-* **Sentry for Monitoring**
+## ⚙️ Tech Stack
 
-## 📦 Installation
+* React 19
+* Next.js 15
+* TypeScript
+* Sanity
+* Next-Auth
+* TailwindCSS
+* ShadCN
+* Groq
+* Sentry
+* Markdown
+
+## 🔋 Features
+
+👉 **Live Content API**: Displays the latest startup ideas dynamically on the homepage using Sanity's Content API.
+
+👉 **GitHub Authentication**: Allows users to log in easily using their GitHub account.
+
+👉 **Pitch Submission**: Users can submit startup ideas, including title, description, category, and multimedia links (image or video).
+
+👉 **View Pitches**: Browse through submitted ideas with filtering options by category.
+
+👉 **Pitch Details Page**: Click on any pitch to view its details, with multimedia and description displayed.
+
+👉 **Profile Page**: Users can view the list of pitches they've submitted.
+
+👉 **Editor Picks**: Admins can highlight top startup ideas using the "Editor Picks" feature managed via Sanity Studio.
+
+👉 **Views Counter**: Tracks the number of views for each pitch instead of an upvote system.
+
+👉 **Search**: Search functionality to load and view pitches efficiently.
+
+👉 **Minimalistic Design**: Fresh and simple UI with only the essential pages for ease of use and a clean aesthetic.
+
+and many more, including the latest React 19, Next.js 15 and Sanity features alongside code architecture and reusability
+
+## 🤸 Quick Start
+
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+* Git
+* Node.js
+* npm (Node Package Manager)
+
+### Cloning the Repository
 
 ```bash
 git clone https://github.com/pritpatel2412/Xeon.git
@@ -40,17 +78,26 @@ cd Xeon
 npm install
 ```
 
-## 🧺a Run Locally
+### Running Locally
 
 ```bash
 npm run dev
 ```
 
-## 📦 Build
+### Building
 
 ```bash
 npm run build
 ```
+
+## 🚨 About
+
+This project showcases the latest features of Next.js 15, including:
+
+* Next.js Form for seamless client-side form submissions
+* Unstable After for background tasks
+* Server Component HMR Cache for faster development
+* Partial Prerendering for performance optimization
 
 ## 🌤 Live
 

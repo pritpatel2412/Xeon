@@ -1,3 +1,7 @@
+
+import dotenv from "dotenv"
+dotenv.config()
+
 export const apiVersion =
   process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2024-11-02"
 

@@ -2,7 +2,6 @@ import "./globals.css"
 import "easymde/dist/easymde.min.css"
 
 import type { Metadata, Viewport } from "next"
-// import localFont from 'next/font/local'
 import { Outfit } from "next/font/google"
 
 import { Toaster } from "@/components/ui/toaster"
@@ -11,33 +10,12 @@ import { Analytics } from "@vercel/analytics/next"
 
 const outfit = Outfit({ subsets: ["latin"] })
 
-// const workSans = localFont({
-//   src: [
-//     {
-//       path: './fonts/WorkSans-Black.ttf',
-//       weight: '900',
-//       style: 'normal',
-//     },
-//     {
-//       path: './fonts/WorkSans-Medium.ttf',
-//       weight: '500',
-//       style: 'normal',
-//     },
-//     {
-//       path: './fonts/WorkSans-Regular.ttf',
-//       weight: '400',
-//       style: 'normal',
-//     },
-//   ],
-//   variable: '--font-work-sans',
-// })
-
 export const metadata: Metadata = {
   title: "Xeon – More Than Just Pitches",
   description:
     "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
   icons: {
-    icon: "/favicon.ico", // path relative to public
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Xeon – More Than Just Pitches",
@@ -47,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Xeon",
     images: [
       {
-        url: "https://i.postimg.cc/SR8NBpVK/Screenshot-2025-06-18-093344.png", // Make sure this image exists in public/
+        url: "https://i.postimg.cc/SR8NBpVK/Screenshot-2025-06-18-093344.png",
         width: 1200,
         height: 630,
         alt: "Xeon – Pitch, Connect, Launch",
@@ -64,8 +42,6 @@ export const metadata: Metadata = {
     images: ["https://i.postimg.cc/SR8NBpVK/Screenshot-2025-06-18-093344.png"],
   },
 }
-
-
 
 export const viewport: Viewport = {
   colorScheme: "dark",
@@ -87,6 +63,7 @@ export default function RootLayout({
       >
         <Toaster />
         {children}
+        <Analytics /> {/* ✅ This line activates Vercel Analytics */}
       </body>
     </html>
   )

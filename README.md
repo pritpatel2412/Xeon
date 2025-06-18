@@ -1,5 +1,7 @@
 # Xeon - Startup Directory Platform
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pritpatel2412/Xeon)
+
 **Xeon** is a platform where entrepreneurs can:
 
 * Submit their startup ideas for virtual pitch competitions
@@ -33,7 +35,7 @@ cd Xeon
 npm install
 ```
 
-## 🧪 Run Locally
+## 🧺a Run Locally
 
 ```bash
 npm run dev
@@ -45,7 +47,7 @@ npm run dev
 npm run build
 ```
 
-## 🖥️ Live
+## 🔤 Live
 
 🔗 [thexeon.vercel.app](https://thexeon.vercel.app/)
 

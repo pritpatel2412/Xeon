@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Sanity-FF3C2E?style=for-the-badge&logo=sanity&logoColor=white" />
 </p>
 
-<h1 align="center">Next ventures - Startup Directory Platform</h1>
+<h1 align="center">Xeon - Startup Directory Platform</h1>
 
 <p align="center">A platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other pitches, and gain exposure through a clean minimalistic design for a smooth user experience.</p>
 

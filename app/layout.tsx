@@ -81,6 +81,10 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <link rel="canonical" href="https://thexeon.vercel.app/" />
+        <meta
+          name="google-site-verification"
+          content="44t5EKDcRY_mAJVq974aR5x5NqQvvbLkmCm5PO-Axx8"
+        />
       </head>
       <body
         className={cn(

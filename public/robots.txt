@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thexeon.vercel.app
+
+# Sitemaps
+Sitemap: https://thexeon.vercel.app/sitemap.xml

@@ -1,19 +1,31 @@
-import "./globals.css"
-import "easymde/dist/easymde.min.css"
+import "./globals.css";
+import "easymde/dist/easymde.min.css";
 
-import type { Metadata, Viewport } from "next"
-import { Outfit } from "next/font/google"
+import type { Metadata, Viewport } from "next";
+import { Outfit } from "next/font/google";
 
-import { Toaster } from "@/components/ui/toaster"
-import { cn } from "@/lib/utils"
-import { Analytics } from "@vercel/analytics/next"
+import { Toaster } from "@/components/ui/toaster";
+import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 
-const outfit = Outfit({ subsets: ["latin"] })
+const outfit = Outfit({ subsets: ["latin"] });
 
+// ✅ SEO Metadata
 export const metadata: Metadata = {
   title: "Xeon – More Than Just Pitches",
   description:
     "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
+  keywords: [
+    "xeon",
+    "thexeon",
+    "xeon startup platform",
+    "startup pitch platform",
+    "connect with founders",
+    "startup ecosystem",
+    "digital incubator",
+    "pitch your startup",
+  ],
+  metadataBase: new URL("https://thexeon.vercel.app"),
   icons: {
     icon: "/favicon.ico",
   },
@@ -41,30 +53,45 @@ export const metadata: Metadata = {
       "A dynamic platform where bold ideas thrive, founders connect, and the startup ecosystem grows beyond the pitch",
     images: ["https://i.postimg.cc/SR8NBpVK/Screenshot-2025-06-18-093344.png"],
   },
-}
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
+};
 
+// ✅ Viewport settings for better rendering on mobile/dark mode
 export const viewport: Viewport = {
   colorScheme: "dark",
   themeColor: [{ media: "(prefers-color-scheme: dark)", color: "black" }],
-}
+};
 
+// ✅ Main layout component
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="canonical" href="https://thexeon.vercel.app/" />
+      </head>
       <body
         className={cn(
           "relative h-full scroll-smooth text-white antialiased selection:bg-pink-700/20 selection:text-pink-400",
-          outfit.className,
+          outfit.className
         )}
       >
         <Toaster />
         {children}
-        <Analytics /> {/* ✅ This line activates Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
-  )
+  );
 }
